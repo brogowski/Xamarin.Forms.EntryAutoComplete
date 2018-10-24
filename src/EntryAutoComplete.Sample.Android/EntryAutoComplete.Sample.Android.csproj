@@ -58,8 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Renderers\BorderlessEntryRenderer.cs" />
-    <Compile Include="Renderers\ShadowedFrameRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,36 +85,10 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_close_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\baseline_search_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\baseline_search_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\baseline_search_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\baseline_search_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\baseline_search_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\baseline_close_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\baseline_close_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\baseline_close_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxxhdpi\baseline_close_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\EntryAutoComplete.Android\EntryAutoComplete.Android.csproj">
+      <Project>{0f5ceba6-243a-45f6-abdd-90d289bdbac4}</Project>
+      <Name>EntryAutoComplete.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntryAutoComplete.Sample\EntryAutoComplete.Sample.csproj">
       <Project>{71A1C6B8-C399-4AEB-95B3-40C2638F4854}</Project>
       <Name>EntryAutoComplete.Sample</Name>

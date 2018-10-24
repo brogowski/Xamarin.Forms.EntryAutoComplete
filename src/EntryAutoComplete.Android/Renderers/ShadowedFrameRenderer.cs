@@ -1,13 +1,13 @@
 ﻿using Android.Graphics;
 using Android.Support.V4.View;
 using EntryAutoComplete;
-using EntryAutoComplete.Sample.Droid.Renderers;
+using EntryAutoComplete.Droid.Renderers;
 using Xamarin.Forms;
 using FrameRenderer = Xamarin.Forms.Platform.Android.AppCompat.FrameRenderer;
 
 [assembly: ExportRenderer(typeof(ShadowedFrame), typeof(ShadowedFrameRenderer))]
 
-namespace EntryAutoComplete.Sample.Droid.Renderers
+namespace EntryAutoComplete.Droid.Renderers
 {
     public class ShadowedFrameRenderer : FrameRenderer
     {
@@ -20,7 +20,7 @@ namespace EntryAutoComplete.Sample.Droid.Renderers
         private void UpdateShadow()
         {
             // we need to reset the StateListAnimator to override the setting of Elevation on touch down and release.
-            Control.StateListAnimator = new Android.Animation.StateListAnimator();
+            Control.StateListAnimator = new global::Android.Animation.StateListAnimator();
 
             // set the elevation manually
             ViewCompat.SetElevation(this, 4.0f);

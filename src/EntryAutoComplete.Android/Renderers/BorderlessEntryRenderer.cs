@@ -1,10 +1,10 @@
 ﻿using EntryAutoComplete;
-using EntryAutoComplete.Sample.Droid.Renderers;
+using EntryAutoComplete.Droid.Renderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly:ExportRenderer(typeof(BorderlessEntry), typeof(BorderlessEntryRenderer))]
-namespace EntryAutoComplete.Sample.Droid.Renderers
+[assembly: ExportRenderer(typeof(BorderlessEntry), typeof(BorderlessEntryRenderer))]
+namespace EntryAutoComplete.Droid.Renderers
 {
 #pragma warning disable CS0618 // Type or member is obsolete
     public class BorderlessEntryRenderer : EntryRenderer

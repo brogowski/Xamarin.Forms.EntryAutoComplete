@@ -4,7 +4,7 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly:ExportRenderer(typeof(BorderlessEntry), typeof(BorderlessEntryRenderer))]
+[assembly: ExportRenderer(typeof(BorderlessEntry), typeof(BorderlessEntryRenderer))]
 namespace EntryAutoComplete.iOS.Renderers
 {
     public class BorderlessEntryRenderer : EntryRenderer
