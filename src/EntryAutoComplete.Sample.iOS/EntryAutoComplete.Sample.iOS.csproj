@@ -92,14 +92,11 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="Renderers\BorderlessEntryRenderer.cs" />
-    <Compile Include="Renderers\ShadowedFrameRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -154,24 +151,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <BundleResource Include="Resources\baseline_search_black_24%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\baseline_search_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\baseline_search_black_24%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\baseline_close_black_24%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\baseline_close_black_24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\baseline_close_black_24%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\EntryAutoComplete.iOS\EntryAutoComplete.iOS.csproj">
+      <Project>{e71f3053-056c-4381-9638-048ed73bdff6}</Project>
+      <Name>EntryAutoComplete.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
     <ProjectReference Include="..\EntryAutoComplete.Sample\EntryAutoComplete.Sample.csproj">
       <Project>{71a1c6b8-c399-4aeb-95b3-40c2638f4854}</Project>
       <Name>EntryAutoComplete.Sample</Name>

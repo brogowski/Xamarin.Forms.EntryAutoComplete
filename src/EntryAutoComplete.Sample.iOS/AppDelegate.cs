@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using Foundation;
 using UIKit;
 
@@ -23,6 +22,7 @@ namespace EntryAutoComplete.Sample.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            global::EntryAutoComplete.iOS.Config.Init();
             LoadApplication(new global::EntryAutoComplete.Sample.App());
 
             return base.FinishedLaunching(app, options);

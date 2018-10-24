@@ -1,13 +1,13 @@
 ﻿using CoreGraphics;
 using EntryAutoComplete;
-using EntryAutoComplete.Sample.iOS.Renderers;
+using EntryAutoComplete.iOS.Renderers;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(ShadowedFrame), typeof(ShadowedFrameRenderer))]
 
-namespace EntryAutoComplete.Sample.iOS.Renderers
+namespace EntryAutoComplete.iOS.Renderers
 {
     public class ShadowedFrameRenderer : FrameRenderer
     {
