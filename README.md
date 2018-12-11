@@ -21,15 +21,17 @@
 
 #### iOS
 
+![demo](https://github.com/krzysztofstepnikowski/Xamarin.Forms.EntryAutoComplete/blob/master/screenshots/iOS.gif?raw=true)
+
 ## Requirements
 
 
 * Xamarin.Forms >= 3.1.0.697729
 
 ## Installation
-Available as a **[NuGet package](https://www.nuget.org/packages/)**. 
+Available as a **[NuGet package](https://www.nuget.org/packages/Xamarin.Forms.EntryAutoComplete/)**. 
 ```
-Install-Package Xamarin.Forms.EntryAutoComplete
+Install-Package Xamarin.Forms.EntryAutoComplete -Version 1.0.0
 ```
 
 ## Usage
